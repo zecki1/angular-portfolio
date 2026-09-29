@@ -1,9 +1,7 @@
 {
   "ci": {
     "collect": {
-      "url": [
-        "http://127.0.0.1:4173/"
-      ],
+      "staticDistDir": "./dist/angular-portfolio/browser",
       "numberOfRuns": 2,
       "settings": {
         "chromeFlags": "--no-sandbox --headless=new --disable-gpu"
@@ -36,6 +34,9 @@
           }
         ]
       }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
     }
   }
 }

@@ -102,13 +102,5 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - name: Servir o dist
-        run: |
-          npx --yes http-server dist/angular-portfolio/browser -p 4173 --silent &
-          npx --yes wait-on http://127.0.0.1:4173/ -t 60000
       - name: Rodar Lighthouse CI
-        uses: treosh/lighthouse-ci-action@v2
-        with:
-          configPath: ./lighthouserc.json
-          uploadArtifacts: true
-          temporaryPublicStorage: true
+        run: npx --yes @lhci/cli@0.14.0 autorun
