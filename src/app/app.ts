@@ -16,10 +16,10 @@ interface ItemNav {
 export class App {
   private readonly supabase = inject(SupabaseService);
 
-  protected readonly titulo = 'Zecki Portfolio';
+  readonly titulo = 'Zecki Portfolio';
   protected readonly tagline = 'Vitrine dos 12 cases do roadmap, com métricas e o que aprendi';
   protected readonly semana = 12;
-  protected readonly nav: ItemNav[] = [
+  readonly nav: ItemNav[] = [
     { path: '/cases', rotulo: 'Cases' },
   ];
 
