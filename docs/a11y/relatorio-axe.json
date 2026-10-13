@@ -1,0 +1,16 @@
+[
+  {
+    "pagina": "raiz",
+    "url": "/",
+    "violacoes": [],
+    "passes": 15,
+    "graves": 0
+  },
+  {
+    "pagina": "cases",
+    "url": "/cases",
+    "violacoes": [],
+    "passes": 15,
+    "graves": 0
+  }
+]
